@@ -2,17 +2,16 @@
 
 
 def not_blank(question):
-    valid =input("Please enter your name?:")
+    valid = False       # means valid is not true
 
-    while not valid:
-        response = print("Sorry - this can't be blank, please enter your name?:")
+    while not valid:    # while true
+        response = input(question)
 
-        if response != valid:
-            print("dumass")
-
+        if response != "":  # if response is not empty
+            return response  # return response on line 8
         else:
-            print("Chur")
-
+            print("Sorry - this can't be blank, "
+                  "please enter your name")
 
 
 # Main Routine goes here
